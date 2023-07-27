@@ -1,8 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&family=Roboto:ital,wght@0,100;0,300;1,300&display=swap');
 
 * {
-  padding: 0;
   margin: 0;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   font-family: 'Roboto', sans-serif;
 }
 
@@ -12,6 +17,8 @@
   justify-content: space-between;
   align-items: center;
   border: 2em;
+  padding-left: 1em;
+  padding-right: 1em;
 }
 
 .nav_links {
@@ -27,9 +34,35 @@ li a {
   color: #b1d4e0;
 }
 
+.page-main {
+  flex-grow: 1;
+}
+
 footer {
-  margin: 0;
-  padding: 0;
-  height: 80px;
+  display: flex;
+  padding-left: 1em;
+  padding-right: 1em;
+  margin-top: auto;
   background-color: #051d40;
+  color: #b1d4e0;
+  justify-content: space-between;
+  align-items: center;
+  border: 2em;
+
+}
+
+.social_links {
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-end;
+  gap: 2em;
+  padding: 1em;
+}
+
+.fa {
+  font-size: 36px
+}
+
+.copyright {
+  text-align: right;
 }
