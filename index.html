@@ -7,7 +7,6 @@
   <title>FutureSport | Football is life</title>
   <!-- social media icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
   <link rel="stylesheet" href="assets/css/main.css">
 </head>
 
@@ -20,23 +19,323 @@
 
       <nav class="nav">
         <ul class="nav_links">
+
+          <li><a href="#schools">Schools Programs</a></li>
           <li><a href="#sponsorship">Sponsorship</a></li>
-          <li><a href="#clubs">Clubs</a></li>
+          <li><a href="#training">Training</a></li>
+          <li><a href="#fixture">Fixture</a></li>
+          <li><a href="#fees">Fees</a></li>
           <li><a href="#about">About Us</a></li>
-          <li><a href="#contact">Contact Us</a></li>
+          <li><a href="#playerReg">Join</a></li>
         </ul>
       </nav>
     </header>
+
     <!-- main body -->
     <main class="main_body">
-      <section>
-        <h1>Section 1</h1>
+      <!-- main call to action section -->
+      <section class="hero">
+        <div class='row'>
+          <div class='column'>
+            <div class='joinCta'>
+              <h1 class="heroTitle">Start Playing Football <br>Today!</h1>
+              <p class="ctaText">Join FutureSport and become a part of the Soccer <br> community.</p>
+              <a href="#playerReg">
+                <button class="joinBtn">Join!</button>
+              </a>
+            </div>
+          </div>
+          <div class="column" id="video">
+            <iframe src="https://www.youtube.com/embed/3zkumKSIEhA" title="Sam Kerr Backflip"></iframe>
+          </div>
+
+        </div>
       </section>
-      <section>
-        <h1>Section 2</h1>
+      <!-- player registration -->
+      <section id="playerReg">
+        <h1 class="sectionHeader">Join</h1>
+        <div class='row'>
+          <div class='column'>
+            <form action="mailto:sam.wijesinha@gmail.com" method="post" enctype="text/plain">
+              <h2>Player Registration Form</h2>
+              <ul class="playerReg">
+                <li><label>Full Name <span class="required">*</span></label>
+                  <input type="text" name="fulllName" class="fulllName" placeholder="First" />
+                  <input type="text" name="fulllName" class="fulllName" placeholder="Last" />
+                </li>
+
+                <li>
+                  <label>Email <span class="required">*</span></label>
+                  <input type="email" name="email" class="email" />
+                </li>
+
+                <li>
+                  <label for="state">Select your State:</label>
+                  <select id="state" name="state">
+                    <option value="vic">VIC</option>
+                    <option value="nsw">NSW</option>
+                    <option value="qld">QLD</option>
+                    <option value="nt">NT</option>
+                    <option value="wa">WA</option>
+                    <option value="sa">SA</option>
+                    <option value="tas">TAS</option>
+                  </select>
+                </li>
+
+                <li>
+                  <label for="suburb">Suburb:<span class="required">*</span></label>
+                  <input type="text" name="suburb" class="suburb" />
+                </li>
+
+                <li>
+                  <label for="birthday">Birthday:</label>
+                  <input type="date" class="birthday" name="birthday">
+                </li>
+
+                <li>
+                  <label for="gender">Select your Gender:</label>
+                  <select id="gender" name="gender">
+                    <option value="female">Female</option>
+                    <option value="male">Male</option>
+                    <option value="non-b">Non-Binary</option>
+                    <option value="other">Other</option>
+                </li>
+
+                <li>
+                  <input type="submit" value="Register" />
+                </li>
+              </ul>
+            </form>
+
+
+          </div>
+          <div class='column'>
+            <div class='aleagueWidget'>
+              <div id="fs-standings"></div>
+              <script> (function (w, d, s, o, f, js, fjs) { w['fsStandingsEmbed'] = o; w[o] = w[o] || function () { (w[o].q = w[o].q || []).push(arguments) }; js = d.createElement(s), fjs = d.getElementsByTagName(s)[0]; js.id = o; js.src = f; js.async = 1; fjs.parentNode.insertBefore(js, fjs); }(window, document, 'script', 'mw', 'https://cdn.footystats.org/embeds/standings.js')); mw('params', { leagueID: 9321 }); </script>
+            </div>
+          </div>
+
       </section>
+
+      <!-- club fees -->
+      <section class="fees">
+        <h1 class="sectionHeader">Club Fees</h1>
+
+        <div class='row'>
+          <div class="column feesColumn">
+            <table id="feesTable">
+              <tbody>
+                <tr>
+                  <th>Fee Type</th>
+                  <th>Indicative Cost</th>
+                  <th>Frequency</th>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="column" id="video">
+            <iframe src="https://www.youtube.com/embed/3zkumKSIEhA" title="Sam Kerr Backflip"></iframe>
+          </div>
+        </div>
+      </section>
+
+      <!-- Fixture Section -->
+      <section id="fixture">
+        <h1 class="sectionHeader">Fixtures</h1>
+
+        <div class='row'>
+          <div class="column">
+            <table id="fixtureTable">
+              <tbody>
+                <tr>
+                  <th>Round</th>
+                  <th>Title</th>
+                  <th>Location</th>
+                  <th>Date</th>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- Training Schedule -->
+      <section id="training">
+        <h1 class="sectionHeader">Training Schedule</h1>
+        <table id="trainingTable">
+          <tbody>
+            <tr>
+              <th>Day</th>
+              <th>Time</th>
+              <th>Location</th>
+              <th>Description</th>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <!-- School Programs -->
+      <section id="schools">
+        <h1 class="sectionHeader">School Programs</h1>
+        <div class='row'>
+          <div class="column">
+            <h2>How we support Schools</h2>
+            <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical
+              Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at
+              Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a
+              Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the
+              undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum"
+              (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of
+              ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit
+              amet..", comes from a line in section 1.10.32.
+
+              The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections
+              1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact
+              original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
+
+            <h2>School Programs</h2>
+            <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical
+              Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at
+              Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a
+              Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the
+              undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum"
+              (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of
+              ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit
+              amet..", comes from a line in section 1.10.32.
+
+              The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections
+              1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact
+              original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
+          </div>
+          <div class="column">
+            <img src="assets/images/soccer_camp.png" alt="soccer camp flyer" class="schoolsImg">
+          </div>
+      </section>
+      <!-- Sponsorship -->
+      <section id="sponsorship">
+
+        <h1 class="sectionHeader">Sponsorship</h1>
+        <div class='row'>
+          <div class="column">
+            <h2>Sponsorship Packages</h2>
+            <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical
+              Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at
+              Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a
+              Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the
+              undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum"
+              (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of
+              ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit
+              amet..", comes from a line in section 1.10.32. The standard chunk of Lorem Ipsum used since the 1500s is
+              reproduced below for those interested. Sections
+              1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact
+              original form, accompanied by English versions from the 1914 translation by H. Rackham. </p>
+
+            <h2>Our Reach</h2>
+
+            <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical
+              Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at
+              Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a
+              Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the
+              undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum"
+              (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of
+              ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit
+              amet..", comes from a line in section 1.10.32.
+
+              The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections
+              1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact
+              original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
+          </div>
+          <div class="column">
+            <div class="slideshow-container">
+              <div class="slide fade">
+                <img src="assets/images/soccer_image_1.png" class="slideImage" alt="Slide 1">
+              </div>
+              <div class="slide fade">
+                <img src="assets/images/soccer_image_2.png" class="slideImage" alt="Slide 2">
+              </div>
+              <div class="slide fade">
+                <img src="assets/images/soccer_image_3.png" class="slideImage" alt="Slide 3">
+              </div>
+              <div class="slide fade">
+                <img src="assets/images/soccer_image_4.png" class="slideImage" alt="Slide 4">
+              </div>
+            </div>
+          </div>
+      </section>
+
+      <!-- About Us -->
+      <section id="about">
+
+        <h1 class="sectionHeader">About Us</h1>
+        <div class='row'>
+          <div class="column">
+            <h2>Our History</h2>
+            <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical
+              Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at
+              Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a
+              Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the
+              undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum"
+              (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of
+              ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit
+              amet..", comes from a line in section 1.10.32.
+
+              The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections
+              1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact
+              original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
+
+            <h2>Our Alumni Players</h2>
+            <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical
+              Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at
+              Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a
+              Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the
+              undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum"
+              (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of
+              ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit
+              amet..", comes from a line in section 1.10.32.
+
+              The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections
+              1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact
+              original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
+          </div>
+          <div class="column" id="video">
+            <iframe src="https://www.youtube.com/embed/TRC8lDhjBSQ" title="World Cup goals"></iframe>
+          </div>
+      </section>
+
+
+
+      <!-- Contact Us -->
       <section>
-        <h1>Section 3</h1>
+        <h1 class="sectionHeader">Contact Us</h1>
+        <form action="mailto:sam.wijesinha@gmail.com" method="post" enctype="text/plain">
+          <h2>Contact Form</h2>
+          <ul class="contactUs">
+            <li><label>Full Name <span class="required">*</span></label><input type="text" name="fulllName"
+                class="fulllName" placeholder="First" /> <input type="text" name="fulllName" class="fulllName"
+                placeholder="Last" /></li>
+            <li>
+              <label>Email <span class="required">*</span></label>
+              <input type="email" name="email" class="email" />
+            </li>
+            <li>
+              <label>Subject</label>
+              <select name="subject" class="field-select">
+                <option value="registration">Registration</option>
+                <option value="sponsorship">Sponsorship</option>
+                <option value="payment">Payment</option>
+                <option value="schoolprogram">School Program</option>
+                <option value="olther">Other</option>
+              </select>
+            </li>
+            <li>
+              <label>Your Message <span class="required">*</span></label>
+              <textarea name="message" id="message" class="field-long field-textarea"></textarea>
+            </li>
+            <li>
+              <input type="submit" value="Submit" />
+            </li>
+          </ul>
+        </form>
       </section>
     </main>
     <!-- footer -->
@@ -45,14 +344,21 @@
         <ul class="social_links">
           <li><a href="#" title="instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
           <li><a href="#" title="facebook"> <i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
-          <li> <a href="#" title="twitter"> <i class="fa fa-twitter-square" aria-hidden="true"></i> </a></li>
         </ul>
+        <div class="tc">
+          <a href="#termsAndConditions">Terms and Conditions</a>
+        </div>
       </div>
       <div class="copyright">
         <p>&copy FutureSport | Football is Life 2023</p>
       </div>
     </footer>
   </div>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/fees.js"></script>
+  <script src="assets/js/fixtures.js"></script>
+  <script src="assets/js/training.js"></script>
+
 </body>
 
 </html>
